@@ -1,0 +1,45 @@
+//这个文件定义颜色的变量   和  函数
+@bgColr : #000;   //body 背景色
+@fontColor : rgba(0, 0, 0, .87); //body 的字体颜色
+@vFontColr : rgba(0, 0, 0, .54);//已经访问过的颜色
+@hFontColor : rgba(0, 0, 0, 0); //移动上去的颜色
+
+/* 弹性盒模型 */
+.box{
+    width: 100%;
+    display: -webkit-flex; /* 新版本语法： Chrome 21+ */
+    display: flex; /* 新版本语法： Opera 12.1, Firefox 22+ */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box;
+}
+
+/* 弹性盒子元素单位空间 */
+.box-flex(@align : 1)  {
+    -webkit-box-flex: @align;
+    -moz-box-flex: @align;
+    -o-box-flex: @align;
+    box-flex: @align;
+    -webkit-flex: @align;
+    flex: @align;
+    width: 1px;
+}
+
+/* 弹性盒 垂直居中（主轴x） */
+.align-items(@align: center) {
+    -webkit-box-align: @align; /*老版本语法*/
+    -moz-box-align: @align;
+    -ms-flex-align: @align; /*混合版本语法*/
+    -webkit-align-items: @align; /*新版本语法*/
+    align-items: @align;
+}
+
+/* 弹性盒 水平居中（主轴x） */
+.justify-content(@align: center) {
+    -webkit-box-pack: @align; /*老版本语法*/
+    -moz-box-pack: @align;
+    -ms-flex-pack: @align; /*混合版本语法*/
+    -webkit-justify-content: @align; /*新版本语法*/
+    justify-content: @align;
+}
