@@ -1,0 +1,8 @@
+@charset "utf-8";
+@import "./common/_variable";
+@import "./common/_reset";
+@import "./common/_layout";
+//参照的类名
+.helloWorld{
+    font-size: toRem(80px);
+}

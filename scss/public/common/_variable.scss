@@ -1,0 +1,52 @@
+//define function  and varible
+$baseFontSize : 75px !default;
+$bgColr : #000;   //body backgroundColor
+$fontColor : rgba(0, 0, 0, .87); //font color
+$vFontColr : rgba(0, 0, 0, .54);// visited font color
+$hFontColor : rgba(0, 0, 0, 0); // hover font color
+
+
+
+@mixin box{
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box;
+}
+
+/* boxflex  */
+@mixin box-flex($align : 1)  {
+    -webkit-box-flex: $align;
+    -moz-box-flex: $align;
+    -o-box-flex: $align;
+    box-flex: $align;
+    -webkit-flex: $align;
+    flex: $align;
+    width: 1px;
+}
+
+/* boxflex */
+@mixin align-items($align: center) {
+    -webkit-box-align: $align; 
+    -moz-box-align: $align;
+    -ms-flex-align: $align; 
+    -webkit-align-items: $align; 
+    align-items: $align;
+}
+
+/* boxflex */
+@mixin justify-content($align: center) {
+    -webkit-box-pack: $align; 
+    -moz-box-pack: $align;
+    -ms-flex-pack: $align; 
+    -webkit-justify-content: $align; 
+    justify-content: $align;
+}
+
+
+@function toRem($size){
+    @return  $size / $baseFontSize * 1rem;
+}
