@@ -1,11 +1,9 @@
 //define function  and varible
 $baseFontSize : 75px !default;
-$bgColr : #000;   //body backgroundColor
+$bgColr : #fff;   //body backgroundColor
 $fontColor : rgba(0, 0, 0, .87); //font color
 $vFontColr : rgba(0, 0, 0, .54);// visited font color
 $hFontColor : rgba(0, 0, 0, 0); // hover font color
-
-
 
 @mixin box{
     width: 100%;

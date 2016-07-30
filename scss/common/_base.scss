@@ -5,10 +5,7 @@ body {
   color: $fontColor;
   -webkit-text-size-adjust: none;
 }
-.wrapper{
-  margin: 0 auto;
-  max-width: 750px;
-}
+
 a {
   text-decoration: none;
   color: $fontColor;
@@ -20,8 +17,4 @@ a {
     outline: none;
     -webkit-tap-highlight-color: $hFontColor;
   }
-}
-input {
-  outline: 0;
-  -webkit-appearance: none;
 }

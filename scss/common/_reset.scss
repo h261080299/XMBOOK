@@ -67,6 +67,12 @@ input,textarea,select {
     *font-size: 100%
 }
 
+input {
+    outline: 0;
+    -webkit-appearance: none;
+}
+
+
 legend {
     color: #000
 }
